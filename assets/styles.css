@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1, p {
+    text-align: left;
+    color: #343a40;
+
+}
+
+.graph-container {
+    display: flex;
+}
+
+.graph-item {
+    flex: 1 1 45%; /* Ensures that each graph takes up to 45% of the container */
+    min-width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.table-container {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .graph-container {
+        flex-direction: column;
+    }
+    .graph-item {
+        flex: 1 1 100%;
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
+
+
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
