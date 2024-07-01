@@ -5,6 +5,7 @@ from scipy.stats import multivariate_normal, norm
 import math
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Process-centric GPs"),
